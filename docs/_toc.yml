@@ -2,22 +2,27 @@ format: jb-book
 root: README
 
 parts:
+  - caption: File Structure and Contents
+    chapters:
+      - file: docs/file-structure
+      - file: docs/file-contents
   - caption: Examples
     numbered: True
     chapters:
-      - file: notebooks/world-bank-api.ipynb
-      - file: notebooks/world-bank-package.ipynb
-      - file: notebooks/nasa-apod.ipynb
-      - file: notebooks/bibliography.ipynb
-  - caption: Gallery
-    chapters:
-      - file: docs/gallery
-  - caption: Templates
+      - file: notebooks/netcdf-example.ipynb
+  # - caption: Gallery
+    # chapters:
+      # - file: docs/gallery
+  - caption: Contributing
     chapters:
       - file: docs/CODE_OF_CONDUCT
       - file: CONTRIBUTING
   - caption: Additional Resources
     chapters:
+      - url: https://climateknowledgeportal.worldbank.org/
+        title: Climate Change Knowledge Portal
+      - url: https://registry.opendata.aws/
+        title: Registry of Open Data on AWS
       - url: https://datapartnership.org
         title: Development Data Partnership
       - url: https://wbdatalab.org
