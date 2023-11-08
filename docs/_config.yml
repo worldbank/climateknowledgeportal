@@ -1,11 +1,11 @@
 # Book settings
 title:
-author: Development Data Group
+author: Climate Change Knowledge Portal Team
 logo: docs/images/logo.png
 only_build_toc_files: true
 
 repository:
-  url: https://github.com/worldbank/template
+  url: https://github.com/worldbank/climateknowledgeportal
   branch: main
 
 #######################################################################################
@@ -16,7 +16,7 @@ html:
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
-  baseurl: https://worldbank.github.io/template
+  baseurl: https://worldbank.github.io/climateknowledgeportal
   extra_footer: |
     <div>
         <b>All content (unless otherwise specified) is subject to the <a href="https://raw.githubusercontent.com/worldbank/template/main/LICENSE">World Bank Master Community License Agreement.</a></b>
@@ -26,11 +26,6 @@ html:
 # Execution settings
 execute:
   execute_notebooks: "off"
-
-#######################################################################################
-# Bibliography settings
-bibtex_bibfiles:
-  - docs/bibliography.bib
 
 #######################################################################################
 # Sphinx settings
