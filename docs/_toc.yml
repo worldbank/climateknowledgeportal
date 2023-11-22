@@ -2,9 +2,10 @@ format: jb-book
 root: README
 
 parts:
-  - caption: mStructure and Contents
+  - caption: Structure and Contents
     chapters:
       - file: docs/file-structure
+      - file: docs/date-and-time-standards
   - caption: Collections
     chapters:
       - file: notebooks/cmip6-x0.25.ipynb

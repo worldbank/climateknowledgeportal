@@ -1,15 +1,20 @@
-# File Contents
+# Data and Time Standards
 
-## Variable Names and Structure
+To standardize are three main issues: (1) “name” as well as (2) data “structure” of the time/date variable, and (3) “formatting” to enable systematic identification of specific products:
+
+## Name and Structure
 
 ### Timeseries
+
 - Annual, Seasonal, Monthly: “time,lat,lon”
 
 ### Climatology / Anomalies / Trends / Trendsignficance / Trendconfidence / Yearofchange
+
 - Annual, Seasonal, Monthly: “time,lat,lon”
 
 ### Heatplot
-- Monthly: “time,lat,lon”
+
+- Monthly:   “time,lat,lon”
 
 ## Data Formatting
 
