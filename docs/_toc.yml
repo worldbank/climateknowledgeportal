@@ -2,17 +2,19 @@ format: jb-book
 root: README
 
 parts:
-  - caption: File Structure and Contents
+  - caption: Structure and Contents
     chapters:
       - file: docs/file-structure
-      - file: docs/file-contents
-  - caption: Examples
-    numbered: True
+      - file: docs/date-and-time-standards
+  - caption: Collections
     chapters:
-      - file: notebooks/netcdf-example.ipynb
+      - file: notebooks/cmip6-x0.25.ipynb
+      - file: notebooks/cru-x0.5.ipynb
+      - file: notebooks/era5-x0.5.ipynb
+      - file: notebooks/pop-x1.ipynb
   - caption: Additional Resources
     chapters:
-      - url: https://climateknowledgeportal.worldbank.org/
+      - url: https://climateknowledgeportal.worldbank.org
         title: Climate Change Knowledge Portal
       - url: https://registry.opendata.aws/
         title: Registry of Open Data on AWS
