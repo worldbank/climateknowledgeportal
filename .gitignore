@@ -90,3 +90,7 @@ _build/
 
 # python-dotenv
 .env
+
+# datafiles
+.nc
+*.nc
