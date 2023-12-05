@@ -8,9 +8,13 @@ parts:
       - file: docs/date-and-time-standards
   - caption: Collections
     chapters:
+      - file: docs/collections/cmip6-x0.25
       - file: notebooks/cmip6-x0.25.ipynb
+      - file: docs/collections/cru-x0.5.md
       - file: notebooks/cru-x0.5.ipynb
+      - file: docs/collections/era5-x0.5.md
       - file: notebooks/era5-x0.5.ipynb
+      - file: docs/collections/pop-x1.md
       - file: notebooks/pop-x1.ipynb
   - caption: Additional Resources
     chapters:
