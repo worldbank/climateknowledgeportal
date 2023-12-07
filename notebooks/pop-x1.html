@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>pop-x1</title>
+    <title>pop-x1 Example</title>
   
   
   
@@ -67,10 +67,10 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://worldbank.github.io/climateknowledgeportal/notebooks/pop-x1.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="era5-x0.25" href="era5-x0.5.html" />
+    <link rel="prev" title="pop-x1 File Structure" href="../docs/collections/pop-x1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Dec 01, 2023"/>
+    <meta name="docbuild:last-update" content="Dec 07, 2023"/>
   </head>
   
   
@@ -177,10 +177,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Collections</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="cmip6-x0.25.html">cmip6-x0.25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cru-x0.5.html">cru-x0.25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="era5-x0.5.html">era5-x0.25</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">pop-x1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/collections/cmip6-x0.25.html">cmip6-x0.25 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmip6-x0.25.html">cmip6-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/collections/cru-x0.5.html">cru-x0.5 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cru-x0.5.html">cru-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/collections/era5-x0.5.html">era5-x0.5 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="era5-x0.5.html">era5-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/collections/pop-x1.html">pop-x1 File Structure</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">pop-x1 Example</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -388,7 +392,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>pop-x1</h1>
+    <h1>pop-x1 Example</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,18 +402,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collection-overview">Collection Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#type">Type:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#product">Product:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">Aggregation:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-interval">Time Interval:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile">Percentile:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-calculation">Model Calculation:</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-data">Example Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-the-nc-file">Reading the <code class="docutils literal notranslate"><span class="pre">.nc</span></code> file</a></li>
@@ -428,230 +420,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="pop-x1">
-<span id="id1"></span><h1>pop-x1<a class="headerlink" href="#pop-x1" title="Permalink to this heading">#</a></h1>
-<section id="collection-overview">
-<h2>Collection Overview<a class="headerlink" href="#collection-overview" title="Permalink to this heading">#</a></h2>
-<p>Insert blurb about collection here.</p>
-<section id="type">
-<h3>Type:<a class="headerlink" href="#type" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>TYPE LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">climatology</span></code></p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">timeseries</span></code></p></td>
-<td><p>timeseries</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="variables">
-<h3>Variables:<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>VARIABLE LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">popcount</span></code></p></td>
-<td><p>Population Count</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">popdensity</span></code></p></td>
-<td><p>Population Density</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pov190</span></code></p></td>
-<td><p>Percentage of Population below $1.90/day</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pov320</span></code></p></td>
-<td><p>Percentage of Population below $3.20/day</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pov550</span></code></p></td>
-<td><p>Percentage of Population below $5.50/day</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="product">
-<h3>Product:<a class="headerlink" href="#product" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>PRODUCT LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">agepyramid</span></code></p></td>
-<td><p>Age Pyramid</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">climatology</span></code></p></td>
-<td><p>Climatology</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">timeseries</span></code></p></td>
-<td><p>Time Series</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="aggregation">
-<h3>Aggregation:<a class="headerlink" href="#aggregation" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>AGGREGATION LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">annual</span></code></p></td>
-<td><p>Annual</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="time-interval">
-<h3>Time Interval:<a class="headerlink" href="#time-interval" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>TIME PERIOD</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1995-2014</p></td>
-</tr>
-<tr class="row-odd"><td><p>2010-2010</p></td>
-</tr>
-<tr class="row-even"><td><p>2020-2039</p></td>
-</tr>
-<tr class="row-odd"><td><p>2040-2059</p></td>
-</tr>
-<tr class="row-even"><td><p>2060-2079</p></td>
-</tr>
-<tr class="row-odd"><td><p>2080-2099</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="percentile">
-<h3>Percentile:<a class="headerlink" href="#percentile" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>PERCENTILE LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">f</span></code></p></td>
-<td><p>f</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">mean</span></code></p></td>
-<td><p>Mean</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="scenario">
-<h3>Scenario:<a class="headerlink" href="#scenario" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>SCENARIO LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SSP1</span></code></p></td>
-<td><p>SSP1</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SSP2</span></code></p></td>
-<td><p>SSP2</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SSP3</span></code></p></td>
-<td><p>SSP3</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SSP4</span></code></p></td>
-<td><p>SSP4</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SSP5</span></code></p></td>
-<td><p>SSP5</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">historical</span></code></p></td>
-<td><p>Historical</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ssp119</span></code></p></td>
-<td><p>SSP1-1.9</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ssp126</span></code></p></td>
-<td><p>SSP1-2.6</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ssp245</span></code></p></td>
-<td><p>SSP2-4.5</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ssp370</span></code></p></td>
-<td><p>SSP3-7.0</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ssp4</span></code></p></td>
-<td><p>ssp4</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ssp585</span></code></p></td>
-<td><p>SSP5-8.5</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="model">
-<h3>Model:<a class="headerlink" href="#model" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>MODEL LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gini</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">gpw-v4</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gsap</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">iiasa-wic</span></code></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="model-calculation">
-<h3>Model Calculation:<a class="headerlink" href="#model-calculation" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>MODEL CALCULATION LABEL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
-<td><p>2</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">poverty</span></code></p></td>
-<td><p>poverty</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">rev11</span></code></p></td>
-<td><p>rev11</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">v9</span></code></p></td>
-<td><p>v9</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="pop-x1-example">
+<span id="pop-x1"></span><h1>pop-x1 Example<a class="headerlink" href="#pop-x1-example" title="Permalink to this heading">#</a></h1>
 <section id="dimensions">
 <h2>Dimensions<a class="headerlink" href="#dimensions" title="Permalink to this heading">#</a></h2>
 <p>This SEDAC population data has the dimensions:</p>
@@ -2000,12 +1770,12 @@ Because we are working with a <code class="docutils literal notranslate"><span c
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="era5-x0.5.html"
+       href="../docs/collections/pop-x1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">era5-x0.25</p>
+        <p class="prev-next-title">pop-x1 File Structure</p>
       </div>
     </a>
 </div>
@@ -2023,18 +1793,6 @@ Because we are working with a <code class="docutils literal notranslate"><span c
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collection-overview">Collection Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#type">Type:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#product">Product:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">Aggregation:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-interval">Time Interval:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile">Percentile:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-calculation">Model Calculation:</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensions">Dimensions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-data">Example Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-the-nc-file">Reading the <code class="docutils literal notranslate"><span class="pre">.nc</span></code> file</a></li>
@@ -2068,7 +1826,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Dec 01, 2023.
+  Last updated on Dec 07, 2023.
   <br/>
 </p>
   </div>

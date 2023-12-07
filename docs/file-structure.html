@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Climate Change Knowledge Portal NetCDF Data Documentation" href="../README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Dec 01, 2023"/>
+    <meta name="docbuild:last-update" content="Dec 07, 2023"/>
   </head>
   
   
@@ -178,10 +178,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Collections</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../notebooks/cmip6-x0.25.html">cmip6-x0.25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notebooks/cru-x0.5.html">cru-x0.25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notebooks/era5-x0.5.html">era5-x0.25</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notebooks/pop-x1.html">pop-x1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collections/cmip6-x0.25.html">cmip6-x0.25 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/cmip6-x0.25.html">cmip6-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collections/cru-x0.5.html">cru-x0.5 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/cru-x0.5.html">cru-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collections/era5-x0.5.html">era5-x0.5 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/era5-x0.5.html">era5-x0.25 Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collections/pop-x1.html">pop-x1 File Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/pop-x1.html">pop-x1 Example</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -376,9 +380,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -394,17 +396,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-name">File Name</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#font-color-c4c43b-collection-font"><font color="#c4c43b">Collection</font></a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -416,47 +407,40 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="directory-structure-and-file-name">
 <h1>Directory Structure and File Name<a class="headerlink" href="#directory-structure-and-file-name" title="Permalink to this heading">#</a></h1>
-<p>The <a class="reference external" href="https://climateknowledgeportal.worldbank.org">Climate Change Knowledge Portal (CCKP)</a> is available as <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf"><strong>netCDF</strong></a> files. A netCDF4 file is structured in a hierarchical directory-like format. It consists of groups, dimensions, variables, and attributes. At the top level, there are groups that act as containers to organize data hierarchically.</p>
-<p>The <strong>CCKP netCDF data</strong> directory structure is as follows:</p>
-<blockquote>
-<div><p><font color='#c4c43b'>{collection}</font>/<font color='#c43bc4'>{variable}</font>/<font color='#3bc43b'>{model-run}</font>/{file}.nc</p>
-</div></blockquote>
-<section id="file-name">
-<h2>File Name<a class="headerlink" href="#file-name" title="Permalink to this heading">#</a></h2>
-<p>The <strong>CCKP netCDF data</strong> filename is as follows:</p>
-<blockquote>
-<div><p><font color='#803bc4'>{product-variable}</font> _ <font color='#c4c43b'>{collection}</font> _ <font color='#3bc43b'>{model-run}</font> _ <font color='#298929'>{type}</font> _ <font color='#ff0000'>{percentile}</font> _ <font color='#0080ff'>{period}</font>.nc</p>
-</div></blockquote>
-<p>For example,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">cmip6</span><span class="o">-</span><span class="n">x1</span><span class="o">/</span><span class="n">tas</span><span class="o">/</span><span class="n">access</span><span class="o">-</span><span class="n">cm2</span><span class="o">-</span><span class="n">r1i1p1f1</span><span class="o">-</span><span class="n">historical</span><span class="o">/</span><span class="n">climatology</span><span class="o">-</span><span class="n">tas</span><span class="o">-</span><span class="n">annual</span><span class="o">-</span><span class="n">mean_cmip6</span><span class="o">-</span><span class="n">x1_access</span><span class="o">-</span><span class="n">cm2</span><span class="o">-</span><span class="n">r1i1p1f1</span><span class="o">-</span><span class="n">historical_climatology_mean_1991</span><span class="o">-</span><span class="mf">2014.</span><span class="n">nc</span>
-</pre></div>
-</div>
-<section id="font-color-c4c43b-collection-font">
-<h3><font color='#c4c43b'>Collection</font><a class="headerlink" href="#font-color-c4c43b-collection-font" title="Permalink to this heading">#</a></h3>
-<p>Click on each collection to learn more about the data available.</p>
+<p>The <a class="reference external" href="https://climateknowledgeportal.worldbank.org">Climate Change Knowledge Portal (CCKP)</a> is available as <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf"><strong>netCDF</strong></a> files.
+A netCDF4 file is structured in a hierarchical directory-like format.
+It consists of groups, dimensions, variables, and attributes. At the top level, there are groups that act as containers to organize data hierarchically.
+The CCKP netCDF data structures are described for each collection in the following sections.</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p>CODE</p></th>
-<th class="head"><p>COLLECTION LABEL</p></th>
+<tr class="row-odd"><th class="head"><p>COLLECTION LABEL</p></th>
+<th class="head"><p>FILE STRUCTURE</p></th>
+<th class="head"><p>EXAMPLE</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../notebooks/cmip6-x0.25.html#cmip6-x0-25"><span class="std std-ref">cmip6-x0.25</span></a></p></td>
-<td><p>CMIP6 0.25-degree</p></td>
+<tr class="row-even"><td><p>CMIP6 0.25-degree</p></td>
+<td><p><a class="reference internal" href="collections/cmip6-x0.25.html"><span class="doc std std-doc">cmip6-x0.25 File Structure</span></a></p></td>
+<td><p><a class="reference internal" href="../notebooks/cmip6-x0.25.html"><span class="doc std std-doc">cmip6-x0.25 Example</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../notebooks/cru-x0.5.html#cru-x0-25"><span class="std std-ref">cru-x0.25</span></a></p></td>
-<td><p>CRU 0.5-degree</p></td>
+<tr class="row-odd"><td><p>CRU 0.5-degree</p></td>
+<td><p><a class="reference internal" href="collections/cru-x0.5.html"><span class="doc std std-doc">cru-x0.5 File Structure</span></a></p></td>
+<td><p><a class="reference internal" href="../notebooks/cru-x0.5.html"><span class="doc std std-doc">cru-x0.25 Example</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../notebooks/era5-x0.5.html#era5-x0-25"><span class="std std-ref">era5-x0.25</span></a></p></td>
-<td><p>ERA5 0.5-degree</p></td>
+<tr class="row-even"><td><p>ERA5 0.5-degree</p></td>
+<td><p><a class="reference internal" href="collections/era5-x0.5.html"><span class="doc std std-doc">era5-x0.5 File Structure</span></a></p></td>
+<td><p><a class="reference internal" href="../notebooks/era5-x0.5.html"><span class="doc std std-doc">era5-x0.25 Example</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../notebooks/pop-x1.html#pop-x1"><span class="std std-ref">pop-x1</span></a></p></td>
-<td><p>Population and Poverty</p></td>
+<tr class="row-odd"><td><p>Population and Poverty</p></td>
+<td><p><a class="reference internal" href="collections/pop-x1.html"><span class="doc std std-doc">pop-x1 File Structure</span></a></p></td>
+<td><p><a class="reference internal" href="../notebooks/pop-x1.html"><span class="doc std std-doc">pop-x1 Example</span></a></p></td>
 </tr>
 </tbody>
 </table>
-</section>
-</section>
+<p>An example of a file path is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">cmip6</span><span class="o">-</span><span class="n">x1</span><span class="o">/</span><span class="n">tas</span><span class="o">/</span><span class="n">access</span><span class="o">-</span><span class="n">cm2</span><span class="o">-</span><span class="n">r1i1p1f1</span><span class="o">-</span><span class="n">historical</span><span class="o">/</span><span class="n">climatology</span><span class="o">-</span><span class="n">tas</span><span class="o">-</span><span class="n">annual</span><span class="o">-</span><span class="n">mean_cmip6</span><span class="o">-</span><span class="n">x1_access</span><span class="o">-</span><span class="n">cm2</span><span class="o">-</span><span class="n">r1i1p1f1</span><span class="o">-</span><span class="n">historical_climatology_mean_1991</span><span class="o">-</span><span class="mf">2014.</span><span class="n">nc</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -514,23 +498,6 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-name">File Name</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#font-color-c4c43b-collection-font"><font color="#c4c43b">Collection</font></a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
             
           </div>
           <footer class="bd-footer-content">
@@ -552,7 +519,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Dec 01, 2023.
+  Last updated on Dec 07, 2023.
   <br/>
 </p>
   </div>
