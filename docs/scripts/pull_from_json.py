@@ -15,7 +15,7 @@ for collection in data.keys():
     if os.path.exists('docs/collections/' + collection + '.md'):
         os.remove('docs/collections/' + collection + '.md')
     # create file for writing
-    f = open('docs/collections/' + collection + '.md', 'w')
+    f = open('docs/collections/' + collection + '.md', 'w+')
     # write to file
     # write collection
     f.write('# ' + collection + ' File Structure\n \n')
