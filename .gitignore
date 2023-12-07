@@ -94,3 +94,9 @@ _build/
 # datafiles
 .nc
 *.nc
+
+# tmp files
+/tmp
+
+# ignore the new docs/collections folder
+docs/collections
