@@ -19,9 +19,9 @@ jobs:
       - name: Dependencies
         run: |
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-      - name: Pull from JSON
-        run: |
-          python docs/scripts/pull_from_json.py
+      # - name: Pull from JSON
+      #   run: |
+      #     python docs/scripts/pull_from_json.py
       - name: Build Jupyter Book
         run: |
           jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
