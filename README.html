@@ -67,9 +67,10 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://worldbank.github.io/climateknowledgeportal/README.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CMIP6" href="docs/collections/cmip6-x0.25.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jan 16, 2024"/>
+    <meta name="docbuild:last-update" content="Jan 17, 2024"/>
   </head>
   
   
@@ -177,7 +178,30 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Available Selections Per Each Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs/collections/cmip6-x0.25.html">CMIP6</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/cmip6-x0.25.html">cmip6-x0.25 Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs/collections/cru-x0.5.html">CRU TS</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/cru-x0.5.html">cru-x0.25 Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs/collections/era5-x0.25.html">ERA5</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs/collections/pop-x0.25.html">Pop-x0.25, Population and Poverty</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/pop-x0.25.html">pop-x0.25</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://climateknowledgeportal.worldbank.org">Climate Change Knowledge Portal</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -391,30 +415,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-climate-change-knowledge-portal-data-on-aws">Accessing Climate Change Knowledge Portal Data On AWS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-knowledge-portal-file-structure">Climate Change Knowledge Portal File Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-file-with-representing-the-root-of-the-cckp-s3-bucket">Example file: (with ‘..’ representing the root of the CCKP S3 bucket)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-1-collection">Sub-Level 1 - Collection:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-2-variable">Sub-Level 2 – Variable:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">File Naming Convention:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-1-collection">Sub-Level 1 - Collection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-2-variable">Sub-Level 2 – Variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-examples-at-various-sub-levels-and-facets-ins"><ins> Examples at various sub-levels and facets: </ins></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-priority-structure-for-search-ins"><ins> Priority structure for search: </ins></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-single-file-query-example-ins"><ins> Single file query example: </ins></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cmip6">CMIP6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cmip6-x0-25-structure">cmip6-x0.25 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5">ERA5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-x0-25-structure">era5-x0.25 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cru-ts4-07">CRU_ts4.07</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cru-x0-5-structure">cru-x0.5 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-x0-25-population-and-poverty">Pop-x0.25, Population and Poverty</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-x0-25-structure">pop-x0.25 Structure</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-documentation">Data Documentation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
@@ -435,6 +446,10 @@ document.write(`
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>The World Bank’s Climate Change Knowledge Portal (CCKP) provides open access to a comprehensive suite of climate and climate change resources derived from the latest generation of climate data archives. Products are based on a consistent and transparent approach with a systematic way of pre-processing the raw observed and model-based projection data to enable inter-comparable use across a broad range of applications. Climate products consist of basic climate variables as well as a large collection (~70+) of more specialized, application-orientated variables and indices across different scenarios. Precomputed data can be extracted per specified variables, select timeframes, climate projection scenarios, as multi-model ensembles or by individual models. CCKP adheres to data distribution standards defined under the Coupled Model Intercomparison Project (CMIP) and its contributions to the Intergovernmental Panel on Climate Change (IPCC) Assessment Reports and latest scientific methodologies identified by the World Meteorological Organization and climate science community.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Access the World Bank Climate Change Portal: <a class="reference external" href="https://climateknowledgeportal.worldbank.org">https://climateknowledgeportal.worldbank.org</a></p>
+</div>
 <p>This data archive consists of global gridded NetCDF files that represent ~35 models, 70+ variables, 5 SSPs, multiple climatology periods, 3 temporal aggregations (annual, seasonal, monthly), plus additional statistics for specific variable presentations.</p>
 <p>Climate products are global and are available for the following <strong>collections</strong>:</p>
 <p><strong>cmip6-x0.25:</strong> CMIP6 downscaled, bias corrected 0.25-degree – 1950-2100;<br/>
@@ -449,39 +464,30 @@ document.write(`
 <section id="climate-change-knowledge-portal-file-structure">
 <h2>Climate Change Knowledge Portal File Structure<a class="headerlink" href="#climate-change-knowledge-portal-file-structure" title="Permalink to this heading">#</a></h2>
 <p>The collections of WB-CCKP raster data stored under the root AWS S3 bucket <code class="docutils literal notranslate"><span class="pre">&lt;AWS</span> <span class="pre">CLI</span> <span class="pre">link</span> <span class="pre">TBD&gt;</span></code>.  The different collections, their variables and datasets with individual raster products (netCDF files) are organized by a hierarchy of facets that follow this structure:</p>
-<section id="example-file-with-representing-the-root-of-the-cckp-s3-bucket">
-<h3>Example file: (with ‘..’ representing the root of the CCKP S3 bucket)<a class="headerlink" href="#example-file-with-representing-the-root-of-the-cckp-s3-bucket" title="Permalink to this heading">#</a></h3>
+<p><strong>Example file: (with ‘..’ representing the root of the CCKP S3 bucket)</strong>:</p>
 <p>       ../<font color='#FF0000'>Sub-Level 1</font>/<font color='#ED7D31'>Sub-Level 2</font>/<font color='#FFD966'>Sub-Level 3</font>/Sub-Level 4 (data)</p>
 <p>       ../<font color='#FF0000'>collection</font>/<font color='#ED7D31'>variable</font>/<font color='#FFD966'>Model</font>-<font color='#C45911'>scenario</font>/filename.nc<br/>
-         with <a class="reference external" href="http://filename.nc">filename.nc</a> being:<br/>
+         <br><b>with <a class="reference external" href="http://filename.nc">filename.nc</a> being:</b><br><br/>
        <font color='#A8D08D'>product</font>-<font color='#ED7D31'>variable</font>-<font color='#B4C6E7'>aggregationperiod</font>-<font color='#4472C4'>statistic</font>_<font color='#FF0000'>collection</font>_<font color='#FFC000'>modelwithscenario</font>_<font color='#538135'>category</font>_<font color='#404040'>percentile</font>_<font color='#AEAAAA'>timeperiod</font>.nc</p>
-</section>
 <section id="sub-level-1-collection">
-<h3>Sub-Level 1 - Collection:<a class="headerlink" href="#sub-level-1-collection" title="Permalink to this heading">#</a></h3>
+<h3>Sub-Level 1 - Collection<a class="headerlink" href="#sub-level-1-collection" title="Permalink to this heading">#</a></h3>
 <p>Under the CCKP root, the first level is the level of “Collection” (<em>cmip6-x0.25</em>, <em>era5</em>, <em>cru</em>, …). This represents the fundamental dataset collection. Inside each of these collections, the same structure is offered, albeit with potentially different entries.</p>
 </section>
 <section id="sub-level-2-variable">
-<h3>Sub-Level 2 – Variable:<a class="headerlink" href="#sub-level-2-variable" title="Permalink to this heading">#</a></h3>
+<h3>Sub-Level 2 – Variable<a class="headerlink" href="#sub-level-2-variable" title="Permalink to this heading">#</a></h3>
 <p>The first sub-level is the level of the variable. These are basic climate variables (<em>tas</em>, <em>pr</em>, …) as well as climate indicators derived from basic variables (<em>txx</em>, <em>rx1day</em>, <em>cdd</em>, <em>hi35</em>, …).</p>
 </section>
 <section id="sub-level-3-dataset">
-<h3>Sub-Level 3 – Dataset:<a class="headerlink" href="#sub-level-3-dataset" title="Permalink to this heading">#</a></h3>
+<h3>Sub-Level 3 – Dataset<a class="headerlink" href="#sub-level-3-dataset" title="Permalink to this heading">#</a></h3>
 <p>Below each of these “variables” (or indicators), there is the “Dataset”, which represents the source itself. This facet is more granular than the collection, because at this level the different versions and individual simulations are being distinguished. For example, the model <em>access-cm2</em> with model simulation variant <em>r1i1p1f1</em> for the simulation covering the historical period is an exactly defined, single simulation (one model run). This allows to distinguish this dataset from an entry of <em>“access-cm2-r2i1p1f1-historical”</em> (note difference in variant label <em>r2</em> vs <em>r1</em>). For observational data with evolving versions, the dataset level distinguishes these entries: <em>cru-ts4.07-historical</em> is different from <em>cru-ts4.07-historical</em>.</p>
 </section>
 <section id="sub-level-4-data">
-<h3>Sub-Level 4 – Data:<a class="headerlink" href="#sub-level-4-data" title="Permalink to this heading">#</a></h3>
+<h3>Sub-Level 4 – Data<a class="headerlink" href="#sub-level-4-data" title="Permalink to this heading">#</a></h3>
 <p>The final level stores the actual data files where the content is being distinguished in the file naming convention.:</p>
 </section>
 <section id="file-naming-convention">
-<h3>File Naming Convention:<a class="headerlink" href="#file-naming-convention" title="Permalink to this heading">#</a></h3>
+<h3>File Naming Convention<a class="headerlink" href="#file-naming-convention" title="Permalink to this heading">#</a></h3>
 <p>The file names are designed to be self-explanatory, meaning they can be copied somewhere and still retain the full information of the collection, variable and dataset source in addition to the actual content. The facets in the file name are as follows:</p>
-</section>
-<section id="id1">
-<h3>File Naming Convention:<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<p>The file names are designed to be self-explanatory, meaning they can be copied somewhere and still retain the full information of the collection, variable and dataset source in addition to the actual content. The facets in the file name are as follows:</p>
-</section>
-<section id="example">
-<h3>Example:<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
 <p>       ../<font color='#FF0000'>cmip6-x0.25</font>/<font color='#ED7D31'>tas</font>/<font color='#FFD966'>access-cm2-r1i1p1f1-</font><font color='#C45911'>historical</font>/<br/>
          <font color='#A8D08D'>climatology</font>-<font color='#ED7D31'>tas</font>-<font color='#B4C6E7'>annual</font>-<font color='#4472C4'>mean</font>_<font color='#FF0000'>cmip6-x0.25</font>_<font color='#FFC000'>access-cm2-r1i1p1f1-historical</font>_<font color='#538135'>climatology</font>_<font color='#404040'>mean</font>_<font color='#AEAAAA'>1995-2014</font>.nc</p>
 </section>
@@ -527,749 +533,12 @@ document.write(`
 </section>
 <section id="available-selections-per-each-collection">
 <h2>Available Selections Per Each Collection<a class="headerlink" href="#available-selections-per-each-collection" title="Permalink to this heading">#</a></h2>
-<section id="cmip6">
-<h3>CMIP6<a class="headerlink" href="#cmip6" title="Permalink to this heading">#</a></h3>
-<p>Model-based, climate projection data is derived from the Coupled Model Inter-comparison Project-Phase 6 (CMIP6). CMIP is a standard framework for the analysis of coupled atmosphere-ocean general circulation models (GCMs) providing projections of future temperature and precipitation according to designated scenarios. CMIP efforts are overseen by the <a class="reference external" href="https://wcrp-cmip.org/cmip-phase-6-cmip6/">World Climate Research Program</a>, which supports the coordination for the production of global and regional climate model compilations that advance scientific understanding of the multi-scale dynamic interactions between the natural and social systems affecting climate.</p>
-<p>CMIP6 projections are shown through five Shared Socioeconomic Pathway (SSPs) Scenarios, designated by total radiative forcing (W/m2) reached by the end of the century. Scenarios are used to represent the climate response to different plausible future societal development storylines and associated contrasting emission pathways to outline how future emissions and land use changes translate into responses in the climate system. These represent possible future greenhouse gas concentration trajectories adopted by the Intergovernmental Panel on Climate Change (IPCC).</p>
-<p>CMIP6 products downscaled and bias corrected at 0.25-degree and represent an update from the recent downscaled NEX-GDDP-CMIP6
-See for raw data access: <a class="reference external" href="https://www.nasa.gov/nasa-earth-exchange-nex/gddp/downscaled-climate-projections-nex-gddp-cmip6/">https://www.nasa.gov/nasa-earth-exchange-nex/gddp/downscaled-climate-projections-nex-gddp-cmip6/</a></p>
-</section>
-<section id="cmip6-x0-25-structure">
-<h3>cmip6-x0.25 Structure<a class="headerlink" href="#cmip6-x0-25-structure" title="Permalink to this heading">#</a></h3>
-<p>Collection:<br/>
-   Variable:<br/>
-      Product:<br/>
-         Scenario:<br/>
-            Aggregation:<br/>
-               Model:<br/>
-                  TimePeriod:<br/>
-                     Percentile:<br/>
-                        Product Type:<br/>
-                           Statistic:<br/></p>
-<p><em>Collection:</em> cmip6-x0.25:</p>
-<p><em>Variable:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Variable Code</strong></p></th>
-<th class="head"><p><strong>Variable Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>cdd65</p></td>
-<td><p>Cooling Degree Days (ref-65°F)</p></td>
-</tr>
-<tr class="row-odd"><td><p>fd</p></td>
-<td><p>Number of Frost Days (Tmin &lt; 0°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>hd30</p></td>
-<td><p>Number of Hot Days (Tmax &gt; 30°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>hd35</p></td>
-<td><p>Number of Hot Days (Tmax &gt; 35°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>hd40</p></td>
-<td><p>Number of Hot Days (Tmax &gt; 40°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>hd45</p></td>
-<td><p>Number of Hot Days (Tmax &gt; 45°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>hdd65</p></td>
-<td><p>Heating degree days (ref-65°F)</p></td>
-</tr>
-<tr class="row-odd"><td><p>id</p></td>
-<td><p>Number of Ice Days (Tmax &lt; 0°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>pr</p></td>
-<td><p>Precipitation</p></td>
-</tr>
-<tr class="row-odd"><td><p>prpercnt</p></td>
-<td><p>Precipitation Percent Change</p></td>
-</tr>
-<tr class="row-even"><td><p>r20mm</p></td>
-<td><p>Number of Days with Precipitation &gt;20mm</p></td>
-</tr>
-<tr class="row-odd"><td><p>r50mm</p></td>
-<td><p>Number of Days with Precipitation &gt;50mm</p></td>
-</tr>
-<tr class="row-even"><td><p>rx1day</p></td>
-<td><p>Average Largest 1-Day Precipitation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rx5day</p></td>
-<td><p>Average Largest 5-Day Cumulative Precipitation</p></td>
-</tr>
-<tr class="row-even"><td><p>sd</p></td>
-<td><p>Number of Summer Days (Tmax &gt; 25°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>tas</p></td>
-<td><p>Average Mean Surface Air Temperature</p></td>
-</tr>
-<tr class="row-even"><td><p>tasmax</p></td>
-<td><p>Average Maximum Surface Air Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>tasmin</p></td>
-<td><p>Average Minimum Surface Air Temperature</p></td>
-</tr>
-<tr class="row-even"><td><p>tnn</p></td>
-<td><p>Minimum of Daily Min-Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>tr</p></td>
-<td><p>Number of Tropical Nights (T-min &gt; 20°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>tr23</p></td>
-<td><p>Number of Tropical Nights (T-min &gt; 23°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>tr26</p></td>
-<td><p>Number of Tropical Nights (T-min &gt; 26°C)</p></td>
-</tr>
-<tr class="row-even"><td><p>tr29</p></td>
-<td><p>Number of Tropical Nights (T-min &gt; 29°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>tx84rr</p></td>
-<td><p>Excess Mortality</p></td>
-</tr>
-<tr class="row-even"><td><p>txx</p></td>
-<td><p>Maximum of Daily Max-Temperature</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Code</strong></p></th>
-<th class="head"><p><strong>Produce Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>anomaly</p></td>
-<td><p>Anomaly</p></td>
-</tr>
-<tr class="row-odd"><td><p>anomalysignificance</p></td>
-<td><p>Anomaly Significance</p></td>
-</tr>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>Climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>natvar</p></td>
-<td><p>Natural Variability</p></td>
-</tr>
-<tr class="row-even"><td><p>natvarhigh</p></td>
-<td><p>Natural Variability-high</p></td>
-</tr>
-<tr class="row-odd"><td><p>natvarlow</p></td>
-<td><p>Natural Variability-low</p></td>
-</tr>
-<tr class="row-even"><td><p>trend</p></td>
-<td><p>Trend</p></td>
-</tr>
-<tr class="row-odd"><td><p>trendconfidence</p></td>
-<td><p>Trend Confidence</p></td>
-</tr>
-<tr class="row-even"><td><p>trendsignificance</p></td>
-<td><p>Trend Significance</p></td>
-</tr>
-<tr class="row-odd"><td><p>yearofchange</p></td>
-<td><p>Year of Change</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Scenario:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Scenario Code</strong></p></th>
-<th class="head"><p><strong>Scenario Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>ssp126</p></td>
-<td><p>SSP1-2.6</p></td>
-</tr>
-<tr class="row-odd"><td><p>ssp245</p></td>
-<td><p>SSP2-4.5</p></td>
-</tr>
-<tr class="row-even"><td><p>ssp370</p></td>
-<td><p>SSP3-7.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>ssp585</p></td>
-<td><p>SSP5-8.5</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Aggregation:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Aggregation Code</strong></p></th>
-<th class="head"><p><strong>Aggregation Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>annual</p></td>
-<td><p>Annual</p></td>
-</tr>
-<tr class="row-odd"><td><p>monthly</p></td>
-<td><p>Monthly</p></td>
-</tr>
-<tr class="row-even"><td><p>seasonal</p></td>
-<td><p>Seasonal</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Model:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Model Code</strong></p></th>
-<th class="head"><p><strong>Modeling Center</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>access-cm2</p></td>
-<td><p>CSIRO (Commonwealth Scientific and Industrial Research Organization, Australia), and ARCCS (Australian Research Council Centre of Excellence for Climate System Science</p></td>
-</tr>
-<tr class="row-odd"><td><p>awi-cm-1-1</p></td>
-<td><p>Alfred Wegener Institute</p></td>
-</tr>
-<tr class="row-even"><td><p>bcc-csm2-mr</p></td>
-<td><p>Beijing Climate Center, China Meteorological Administration</p></td>
-</tr>
-<tr class="row-odd"><td><p>cams-csm1-0</p></td>
-<td><p>Canadian Centre for Climate Modelling and Analysis</p></td>
-</tr>
-<tr class="row-even"><td><p>cmcc-esm2</p></td>
-<td><p>Euro-Mediterranean Center on Climate Change</p></td>
-</tr>
-<tr class="row-odd"><td><p>cnrm-cm6-1</p></td>
-<td><p>Centre National de Recherches Meteorologiques</p></td>
-</tr>
-<tr class="row-even"><td><p>cnrm-esm2-1</p></td>
-<td><p>Centre National de Recherches Meteorologiques / Centre Européen de Recherche et Formation Avancées en Calcul Scientifique</p></td>
-</tr>
-<tr class="row-odd"><td><p>ec-earth2</p></td>
-<td><p>EC-Earth-Consortium</p></td>
-</tr>
-<tr class="row-even"><td><p>ec-earth3-veg</p></td>
-<td><p>EC-Earth-Consortium</p></td>
-</tr>
-<tr class="row-odd"><td><p>ec-earth3-veg-lr</p></td>
-<td><p>EC-Earth-Consortium</p></td>
-</tr>
-<tr class="row-even"><td><p>fgoals-g3</p></td>
-<td><p>China Academy of Sciences</p></td>
-</tr>
-<tr class="row-odd"><td><p>gfdl-cm4</p></td>
-<td><p>Geophysical Fluid Dynamics Laboratory, NOAA</p></td>
-</tr>
-<tr class="row-even"><td><p>gfdl-esm4</p></td>
-<td><p>Geophysical Fluid Dynamics Laboratory, NOAA</p></td>
-</tr>
-<tr class="row-odd"><td><p>gfdl-esm5</p></td>
-<td><p>Geophysical Fluid Dynamics Laboratory, NOAA</p></td>
-</tr>
-<tr class="row-even"><td><p>hadgem3-gcs1-II</p></td>
-<td><p>UK Met Office Hadley Centre</p></td>
-</tr>
-<tr class="row-odd"><td><p>inm-cm4-8</p></td>
-<td><p>Institute for Numerical Mathematics</p></td>
-</tr>
-<tr class="row-even"><td><p>inm-cm5-0</p></td>
-<td><p>Institute for Numerical Mathematics</p></td>
-</tr>
-<tr class="row-odd"><td><p>ipsl-cm6a-lr</p></td>
-<td><p>The Institute Pierre Simon Laplace</p></td>
-</tr>
-<tr class="row-even"><td><p>kiost-esm</p></td>
-<td><p>Korea Institute of Ocean Science and Technology</p></td>
-</tr>
-<tr class="row-odd"><td><p>miroc-es2l</p></td>
-<td><p>Atmosphere and Ocean Research Institute (The University of Tokyo), Center for Climate system Research - National Institute for Environmental Studies</p></td>
-</tr>
-<tr class="row-even"><td><p>mpi-esm1-2hr</p></td>
-<td><p>Max Planck Institute for Meteorology (MPI-M)</p></td>
-</tr>
-<tr class="row-odd"><td><p>mpi-esm1-2-lr</p></td>
-<td><p>Max Planck Institute for Meteorology (MPI-M)</p></td>
-</tr>
-<tr class="row-even"><td><p>mri-esm2-0</p></td>
-<td><p>Meteorological Research Institute</p></td>
-</tr>
-<tr class="row-odd"><td><p>nesm3</p></td>
-<td><p>Nanjing University of Information Science and Technology</p></td>
-</tr>
-<tr class="row-even"><td><p>noresm2-lm</p></td>
-<td><p>Norwegian Climate Centre</p></td>
-</tr>
-<tr class="row-odd"><td><p>noresm2-mm</p></td>
-<td><p>Norwegian Climate Centre</p></td>
-</tr>
-<tr class="row-even"><td><p>ukesm1-0-II</p></td>
-<td><p>National Institute of Meteorological Sciences, Korea</p></td>
-</tr>
-<tr class="row-odd"><td><p>Ensemble_all</p></td>
-<td><p>Multi-Model Ensemble</p></td>
-</tr>
-</tbody>
-</table>
-<p>*Note: Not all models used in production of every variable, SSP</p>
-<br>
-<p><em>Time Period:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Time Period</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1995-2014</p></td>
-</tr>
-<tr class="row-odd"><td><p>2020-2039</p></td>
-</tr>
-<tr class="row-even"><td><p>2040-2059</p></td>
-</tr>
-<tr class="row-odd"><td><p>2060-2079</p></td>
-</tr>
-<tr class="row-even"><td><p>2080-2099</p></td>
-</tr>
-<tr class="row-odd"><td><p>1950-2014</p></td>
-</tr>
-<tr class="row-even"><td><p>2015-2100</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Percentile:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Percentile Code</strong></p></th>
-<th class="head"><p><strong>Percentile Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>median</p></td>
-<td><p>Median or 50th Percentile of the Multi-Model Ensemble</p></td>
-</tr>
-<tr class="row-odd"><td><p>p10</p></td>
-<td><p>10th Percentile of the Multi-Model Ensemble</p></td>
-</tr>
-<tr class="row-even"><td><p>p90</p></td>
-<td><p>90th Percentile of the Multi-Model Ensemble</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product Type:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Produce Type Code</strong></p></th>
-<th class="head"><p><strong>Product Type Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>heatplot</p></td>
-<td><p>heatplot</p></td>
-</tr>
-<tr class="row-even"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-<tr class="row-odd"><td><p>timeseries-smooth</p></td>
-<td><p>Time Series-smooth</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Statistic:</em>
-mean; max</p>
-</section>
-<section id="era5">
-<h3>ERA5<a class="headerlink" href="#era5" title="Permalink to this heading">#</a></h3>
-<p>ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1950 to present. ERA5 is originally produced by the Copernicus Climate Change Service (C3S) at ECMWF at on original grid of 0.50-degree. ERA5 products derived by CCKP are downscaled and available at 0.25-degree.</p>
-</section>
-<section id="era5-x0-25-structure">
-<h3>era5-x0.25 Structure<a class="headerlink" href="#era5-x0-25-structure" title="Permalink to this heading">#</a></h3>
-<p>Collection:<br/>
-   Variable:<br/>
-      Product:<br/>
-         Scenario:<br/>
-            Aggregation:<br/>
-               TimePeriod:<br/>
-                  Product Type:<br/></p>
-<p><em>Collection:</em> era5-x0.25:</p>
-<p><em>Variable:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Variable Cove</strong></p></th>
-<th class="head"><p><strong>Variable Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>fd</p></td>
-<td><p>Number of Frost Days (Tmin &lt; 0°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>pr</p></td>
-<td><p>Precipitation</p></td>
-</tr>
-<tr class="row-even"><td><p>rx1day</p></td>
-<td><p>Average Largest 1-Day Precipitation</p></td>
-</tr>
-<tr class="row-odd"><td><p>rx5day</p></td>
-<td><p>Average Largest 5-Day Cumulative Precipitation</p></td>
-</tr>
-<tr class="row-even"><td><p>tas</p></td>
-<td><p>Average Mean Surface Air Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>tasmax</p></td>
-<td><p>Average Maximum Surface Air Temperature</p></td>
-</tr>
-<tr class="row-even"><td><p>tasmin</p></td>
-<td><p>Average Minimum Surface Air Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>tnn</p></td>
-<td><p>Minimum of Daily Min-Temperature</p></td>
-</tr>
-<tr class="row-even"><td><p>tr</p></td>
-<td><p>Number of Tropical Nights (T-min &gt; 20°C)</p></td>
-</tr>
-<tr class="row-odd"><td><p>txx</p></td>
-<td><p>Maximum of Daily Max-Temperature</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Code</strong></p></th>
-<th class="head"><p><strong>Product Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>Climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>trend</p></td>
-<td><p>Trend</p></td>
-</tr>
-<tr class="row-even"><td><p>trendconfidence</p></td>
-<td><p>Trend Confidence</p></td>
-</tr>
-<tr class="row-odd"><td><p>trendsignificance</p></td>
-<td><p>Trend Significance</p></td>
-</tr>
-</tbody>
-</table>
-<p><em>Scenario:</em> historical_era5</p>
-<p><em>Aggregation:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Aggregation Code</strong></p></th>
-<th class="head"><p><strong>Aggregation Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>annual</p></td>
-<td><p>Annual</p></td>
-</tr>
-<tr class="row-odd"><td><p>monthly</p></td>
-<td><p>Monthly</p></td>
-</tr>
-<tr class="row-even"><td><p>seasonal</p></td>
-<td><p>Seasonal</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>TimePeriod:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Time Period</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1950-2020</p></td>
-</tr>
-<tr class="row-odd"><td><p>1991-2020</p></td>
-</tr>
-<tr class="row-even"><td><p>1995-2014</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product Type:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Produce Type Code</strong></p></th>
-<th class="head"><p><strong>Product Type Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>heatplot</p></td>
-<td><p>heatplot</p></td>
-</tr>
-<tr class="row-even"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="cru-ts4-07">
-<h3>CRU_ts4.07<a class="headerlink" href="#cru-ts4-07" title="Permalink to this heading">#</a></h3>
-<p>CRU TS (Climatic Research Unit gridded Time Series) is the most widely used observational climate dataset. Data is presented on a 0.5° latitude by 0.5° longitude grid over all land domains except Antarctica. It is derived by the interpolation of monthly climate anomalies from extensive networks of weather station observations. The CRU TS version 4.07 gridded dataset is derived from observational data and provides quality-controlled temperature and rainfall values from thousands of weather stations worldwide, as well as derivative products including monthly climatologies and long term historical climatologies. The dataset is produced by the Climatic Research Unit (CRU) of the University of East Anglia (UEA)</p>
-</section>
-<section id="cru-x0-5-structure">
-<h3>cru-x0.5 Structure<a class="headerlink" href="#cru-x0-5-structure" title="Permalink to this heading">#</a></h3>
-<p>Collection:<br/>
-   Variable:<br/>
-      Product:<br/>
-         Scenario:<br/>
-            Aggregation:<br/>
-               TimePeriod:<br/>
-                  Product Type:<br/></p>
-<p><em>Collection:</em> cru-x0.5:</p>
-<p><em>Variable:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Variable Code</strong></p></th>
-<th class="head"><p><strong>Variable Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>pr</p></td>
-<td><p>Precipitation</p></td>
-</tr>
-<tr class="row-odd"><td><p>tas</p></td>
-<td><p>Average Mean Surface Air Temperature</p></td>
-</tr>
-<tr class="row-even"><td><p>tasmax</p></td>
-<td><p>Average Maximum Surface Air Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>tasmin</p></td>
-<td><p>Average Minimum Surface Air Temperature</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Code</strong></p></th>
-<th class="head"><p><strong>Product Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>heatplot</p></td>
-<td><p>heatplot</p></td>
-</tr>
-<tr class="row-even"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-<tr class="row-odd"><td><p>timeseries-smooth</p></td>
-<td><p>Time Series-smooth</p></td>
-</tr>
-</tbody>
-</table>
-<p><em>Scenario:</em> historical_cru_ts4.07</p>
-<p><em>Aggregation:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Aggregation Code</strong></p></th>
-<th class="head"><p><strong>Aggregation Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>annual</p></td>
-<td><p>Annual</p></td>
-</tr>
-<tr class="row-odd"><td><p>monthly</p></td>
-<td><p>Monthly</p></td>
-</tr>
-<tr class="row-even"><td><p>seasonal</p></td>
-<td><p>Seasonal</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>TimePeriod:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Time Period</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1901-2022</p></td>
-</tr>
-<tr class="row-odd"><td><p>1901-1930</p></td>
-</tr>
-<tr class="row-even"><td><p>1931-1960</p></td>
-</tr>
-<tr class="row-odd"><td><p>1961-1990</p></td>
-</tr>
-<tr class="row-even"><td><p>1991-2020</p></td>
-</tr>
-<tr class="row-odd"><td><p>1995-2014</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product Type:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Type Code</strong></p></th>
-<th class="head"><p><strong>Product Type Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>heatplot</p></td>
-<td><p>heatplot</p></td>
-</tr>
-<tr class="row-even"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-<tr class="row-odd"><td><p>timeseries-smooth</p></td>
-<td><p>Time Series-smooth</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="pop-x0-25-population-and-poverty">
-<h3>Pop-x0.25, Population and Poverty<a class="headerlink" href="#pop-x0-25-population-and-poverty" title="Permalink to this heading">#</a></h3>
-<p>Global population data is produced in line with the socio-economic assumptions for each SSP. Historical population data is derived from the Grided Population of the World-Version 4. Poverty data classifications are derived from the International Poverty Line-Global Subnational Poverty Atlas of the World Bank Data Catalogue.</p>
-</section>
-<section id="pop-x0-25-structure">
-<h3>pop-x0.25 Structure<a class="headerlink" href="#pop-x0-25-structure" title="Permalink to this heading">#</a></h3>
-<p>Collection:<br/>
-   Variable:<br/>
-      Product:<br/>
-         Scenario:<br/>
-            Aggregation:<br/>
-               TimePeriod:<br/>
-                  Product Type:<br/></p>
-<p><em>Collection:</em> pop-x0.25:</p>
-<p><em>Variable:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Variable Code</strong></p></th>
-<th class="head"><p><strong>Variable Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>popcount</p></td>
-<td><p>Population Count</p></td>
-</tr>
-<tr class="row-odd"><td><p>popdensity</p></td>
-<td><p>Population Density (persons/km2)</p></td>
-</tr>
-<tr class="row-even"><td><p>pov190</p></td>
-<td><p>Percentage of Population below $1.90/day</p></td>
-</tr>
-<tr class="row-odd"><td><p>pov320</p></td>
-<td><p>Percentage of Population below $3.20/day</p></td>
-</tr>
-<tr class="row-even"><td><p>pov550</p></td>
-<td><p>Percentage of Population below $5.50/day</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Code</strong></p></th>
-<th class="head"><p><strong>Product Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>agepyramid</p></td>
-<td><p>Age Pyramid</p></td>
-</tr>
-<tr class="row-odd"><td><p>climatology</p></td>
-<td><p>Climatology</p></td>
-</tr>
-<tr class="row-even"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Scenario:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Scenario Code</strong></p></th>
-<th class="head"><p><strong>Scenario Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>historical</p></td>
-<td><p>Historical</p></td>
-</tr>
-<tr class="row-odd"><td><p>ssp119</p></td>
-<td><p>SSP1-1.9</p></td>
-</tr>
-<tr class="row-even"><td><p>ssp126</p></td>
-<td><p>SSP1-2.6</p></td>
-</tr>
-<tr class="row-odd"><td><p>ssp245</p></td>
-<td><p>SSP2-4.5</p></td>
-</tr>
-<tr class="row-even"><td><p>ssp370</p></td>
-<td><p>SSP3-7.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>ssp585</p></td>
-<td><p>SSP5-8.5</p></td>
-</tr>
-</tbody>
-</table>
-<p><em>Aggregation:</em> annual</p>
-<p><em>TimePeriod:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Time Period</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>1995-2014</p></td>
-</tr>
-<tr class="row-odd"><td><p>2020-2039</p></td>
-</tr>
-<tr class="row-even"><td><p>2040-2059</p></td>
-</tr>
-<tr class="row-odd"><td><p>2060-2079</p></td>
-</tr>
-<tr class="row-even"><td><p>2080-2099</p></td>
-</tr>
-<tr class="row-odd"><td><p>2010-2100</p></td>
-</tr>
-</tbody>
-</table>
-<br>
-<p><em>Product Type:</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Product Type Code</strong></p></th>
-<th class="head"><p><strong>Product Type Label</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>climatology</p></td>
-<td><p>climatology</p></td>
-</tr>
-<tr class="row-odd"><td><p>timeseries</p></td>
-<td><p>timeseries</p></td>
-</tr>
-</tbody>
-</table>
-</section>
+<ul class="simple">
+<li><p><a class="reference internal" href="docs/collections/cmip6-x0.25.html#cmip6-x0-25"><span class="std std-ref">CMIP6</span></a></p></li>
+<li><p><a class="reference internal" href="docs/collections/cru-x0.5.html#cru-x0-5"><span class="std std-ref">CRU TS</span></a></p></li>
+<li><p><a class="reference internal" href="docs/collections/era5-x0.25.html#era5-x0-25"><span class="std std-ref">ERA5</span></a></p></li>
+<li><p><a class="reference internal" href="docs/collections/pop-x0.25.html#pop-x0-25"><span class="std std-ref">Pop-x0.25, Population and Poverty</span></a></p></li>
+</ul>
 </section>
 <section id="data-documentation">
 <h2>Data Documentation<a class="headerlink" href="#data-documentation" title="Permalink to this heading">#</a></h2>
@@ -1277,8 +546,10 @@ mean; max</p>
 </section>
 <section id="additional-resources">
 <h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://climateknowledgeportal.worldbank.org/">Climate Change Knowledge Portal</a><br/>
-<a class="reference external" href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://climateknowledgeportal.worldbank.org/">Climate Change Knowledge Portal</a></p></li>
+<li><p><a class="reference external" href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></p></li>
+</ul>
 </section>
 <section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading">#</a></h2>
@@ -1286,8 +557,12 @@ mean; max</p>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://github.com/worldbank/climateknowledgeportal">This documentation</a> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>World Bank Master Community License Agreement</strong></span></a>.</p>
+<p><a class="reference external" href="https://github.com/worldbank/climateknowledgeportal">This documentation</a> is licensed under the <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><strong>Mozilla Public License</strong></span></a>.</p>
 </section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1320,6 +595,15 @@ mean; max</p>
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="right-next"
+       href="docs/collections/cmip6-x0.25.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">CMIP6</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1339,30 +623,17 @@ mean; max</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-climate-change-knowledge-portal-data-on-aws">Accessing Climate Change Knowledge Portal Data On AWS</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#climate-change-knowledge-portal-file-structure">Climate Change Knowledge Portal File Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-file-with-representing-the-root-of-the-cckp-s3-bucket">Example file: (with ‘..’ representing the root of the CCKP S3 bucket)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-1-collection">Sub-Level 1 - Collection:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-2-variable">Sub-Level 2 – Variable:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">File Naming Convention:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-1-collection">Sub-Level 1 - Collection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-2-variable">Sub-Level 2 – Variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-examples-at-various-sub-levels-and-facets-ins"><ins> Examples at various sub-levels and facets: </ins></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-priority-structure-for-search-ins"><ins> Priority structure for search: </ins></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-single-file-query-example-ins"><ins> Single file query example: </ins></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cmip6">CMIP6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cmip6-x0-25-structure">cmip6-x0.25 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5">ERA5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#era5-x0-25-structure">era5-x0.25 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cru-ts4-07">CRU_ts4.07</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cru-x0-5-structure">cru-x0.5 Structure</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-x0-25-population-and-poverty">Pop-x0.25, Population and Poverty</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-x0-25-structure">pop-x0.25 Structure</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-documentation">Data Documentation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources">Additional Resources</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
@@ -1393,7 +664,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Jan 16, 2024.
+  Last updated on Jan 17, 2024.
   <br/>
 </p>
   </div>
