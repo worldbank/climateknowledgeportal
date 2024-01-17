@@ -98,5 +98,3 @@ _build/
 # tmp files
 /tmp
 
-# ignore the new docs/collections folder
-docs/collections
