@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '0 0 1 * *'  # run workflow at 12AM on first day of every month
+    - cron: "0 0 1 * *" # run workflow at 12AM on first day of every month
 
 jobs:
   build:
@@ -19,9 +19,6 @@ jobs:
       - name: Dependencies
         run: |
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-      # - name: Pull from JSON
-      #   run: |
-      #     python docs/scripts/pull_from_json.py
       - name: Build Jupyter Book
         run: |
           jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml
