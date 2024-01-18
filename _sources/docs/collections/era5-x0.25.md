@@ -2,7 +2,7 @@
 
 # ERA5
 
-ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1950 to present. ERA5 is originally produced by the Copernicus Climate Change Service (C3S) at ECMWF at on original grid of 0.50-degree. ERA5 products derived by CCKP are downscaled and available at 0.25-degree.
+ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1950 to 2022. ERA5 is originally produced by the Copernicus Climate Change Service (C3S) at ECMWF at on original grid of 0.50-degree. ERA5 products derived by CCKP are downscaled and available at 0.25-degree.
 
 ## era5-x0.25 Structure
 
