@@ -2,7 +2,7 @@
 
 ## Overview
 
-The World Bank’s Climate Change Knowledge Portal (CCKP) provides open access to a comprehensive suite of climate and climate change resources derived from the latest generation of climate data archives. Products are based on a consistent and transparent approach with a systematic way of pre-processing the raw observed and model-based projection data to enable inter-comparable use across a broad range of applications. Climate products consist of basic climate variables as well as a large collection (~70+) of more specialized, application-orientated variables and indices across different scenarios. Precomputed data can be extracted per specified variables, select timeframes, climate projection scenarios, as multi-model ensembles or by individual models. CCKP adheres to data distribution standards defined under the Coupled Model Intercomparison Project (CMIP) and its contributions to the Intergovernmental Panel on Climate Change (IPCC) Assessment Reports and latest scientific methodologies identified by the World Meteorological Organization and climate science community.
+The World Bank’s Climate Change Knowledge Portal (CCKP) provides open access to a comprehensive suite of climate and climate change resources derived from the latest generation of climate data archives. Products are based on a consistent and transparent approach with a systematic way of pre-processing the raw observed and model-based projection data to enable inter-comparable use across a broad range of applications. Climate products consist of basic climate variables as well as a large collection (70+) of more specialized, application-orientated variables and indices across different scenarios. Precomputed data can be extracted per specified variables, select timeframes, climate projection scenarios, as multi-model ensembles or by individual models. CCKP adheres to data distribution standards defined under the Coupled Model Intercomparison Project (CMIP) and its contributions to the Intergovernmental Panel on Climate Change (IPCC) Assessment Reports and latest scientific methodologies identified by the World Meteorological Organization and climate science community.
 
 ```{seealso}
 Access the World Bank Climate Change Portal: https://climateknowledgeportal.worldbank.org
@@ -13,7 +13,7 @@ This data archive consists of global gridded NetCDF files that represent ~35 mod
 Climate products are global and are available for the following **collections**:
 
 **cmip6-x0.25:** CMIP6 downscaled, bias corrected 0.25-degree – 1950-2100;<br/>
-**era5-x0.25:** EAR5 global 0.25-degree – 1950-2020;<br/>
+**era5-x0.25:** EAR5 global 0.25-degree – 1950-2022;<br/>
 **cru-x0.5:** CRU global 0.50-degree – 1901-2022;<br/>
 **pop-x0.25:** Population global 0.25-degree – 1995-2100 (Gridded Population of the World Version 4).
 
