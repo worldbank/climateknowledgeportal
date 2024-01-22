@@ -24,6 +24,7 @@ html:
     <div>
         <b>All content (unless otherwise specified) is subject to the <a href="https://www.mozilla.org/en-US/MPL">Mozilla Public License.</a></b>
     </div>
+  favicon: docs/images/favicon.ico
 
 #######################################################################################
 # Execution settings
