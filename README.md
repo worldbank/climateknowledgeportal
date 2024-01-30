@@ -19,11 +19,11 @@ Climate products are global and are available for the following **collections**:
 
 ## Accessing Climate Change Knowledge Portal Data On AWS
 
-You can access these data via the link, `<AWS CLI link TBD>` and using the web interface via the AWS console. To get a list for all variables and climate indicators available for the CMIP6 data at 0.25x0.25 degree resolution, this sub-directory will list them (using the <font color='#E83E8C'>--no-sign-request</font> flag since this bucket is public):
+You can access these data via the link, `<aws s3 ls –no-sign-request s3://wbg-cckp/>` and using the web interface via the AWS console. To get a list for all variables and climate indicators available for the CMIP6 data at 0.25x0.25 degree resolution, this sub-directory will list them (using the <font color='#E83E8C'>--no-sign-request</font> flag since this bucket is public):
 
 ## Climate Change Knowledge Portal File Structure
 
-The collections of WB-CCKP raster data stored under the root AWS S3 bucket `<AWS CLI link TBD>`.  The different collections, their variables and datasets with individual raster products (netCDF files) are organized by a hierarchy of facets that follow this structure:
+The collections of WB-CCKP raster data stored under the root AWS S3 bucket `<aws s3 ls –no-sign-request s3://wbg-cckp/>`.  The different collections, their variables and datasets with individual raster products (netCDF files) are organized by a hierarchy of facets that follow this structure:
 
 **Example file: (with ‘..’ representing the root of the CCKP S3 bucket)**:
 
