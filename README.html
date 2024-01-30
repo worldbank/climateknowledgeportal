@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="CMIP6" href="docs/collections/cmip6-x0.25.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jan 22, 2024"/>
+    <meta name="docbuild:last-update" content="Jan 30, 2024"/>
   </head>
   
   
@@ -456,11 +456,11 @@ document.write(`
 </section>
 <section id="accessing-climate-change-knowledge-portal-data-on-aws">
 <h2>Accessing Climate Change Knowledge Portal Data On AWS<a class="headerlink" href="#accessing-climate-change-knowledge-portal-data-on-aws" title="Permalink to this heading">#</a></h2>
-<p>You can access these data via the link, <code class="docutils literal notranslate"><span class="pre">&lt;AWS</span> <span class="pre">CLI</span> <span class="pre">link</span> <span class="pre">TBD&gt;</span></code> and using the web interface via the AWS console. To get a list for all variables and climate indicators available for the CMIP6 data at 0.25x0.25 degree resolution, this sub-directory will list them (using the <font color='#E83E8C'>–no-sign-request</font> flag since this bucket is public):</p>
+<p>You can access these data via the link, <code class="docutils literal notranslate"><span class="pre">&lt;aws</span> <span class="pre">s3</span> <span class="pre">ls</span> <span class="pre">–no-sign-request</span> <span class="pre">s3://wbg-cckp/&gt;</span></code> and using the web interface via the AWS console. To get a list for all variables and climate indicators available for the CMIP6 data at 0.25x0.25 degree resolution, this sub-directory will list them (using the <font color='#E83E8C'>–no-sign-request</font> flag since this bucket is public):</p>
 </section>
 <section id="climate-change-knowledge-portal-file-structure">
 <h2>Climate Change Knowledge Portal File Structure<a class="headerlink" href="#climate-change-knowledge-portal-file-structure" title="Permalink to this heading">#</a></h2>
-<p>The collections of WB-CCKP raster data stored under the root AWS S3 bucket <code class="docutils literal notranslate"><span class="pre">&lt;AWS</span> <span class="pre">CLI</span> <span class="pre">link</span> <span class="pre">TBD&gt;</span></code>.  The different collections, their variables and datasets with individual raster products (netCDF files) are organized by a hierarchy of facets that follow this structure:</p>
+<p>The collections of WB-CCKP raster data stored under the root AWS S3 bucket <code class="docutils literal notranslate"><span class="pre">&lt;aws</span> <span class="pre">s3</span> <span class="pre">ls</span> <span class="pre">–no-sign-request</span> <span class="pre">s3://wbg-cckp/&gt;</span></code>.  The different collections, their variables and datasets with individual raster products (netCDF files) are organized by a hierarchy of facets that follow this structure:</p>
 <p><strong>Example file: (with ‘..’ representing the root of the CCKP S3 bucket)</strong>:</p>
 <p>       ../<font color='#FF0000'>Sub-Level 1</font>/<font color='#ED7D31'>Sub-Level 2</font>/<font color='#FFD966'>Sub-Level 3</font>/Sub-Level 4 (data)</p>
 <p>       ../<font color='#FF0000'>collection</font>/<font color='#ED7D31'>variable</font>/<font color='#FFD966'>Model</font>-<font color='#C45911'>scenario</font>/filename.nc<br/>
@@ -661,7 +661,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Jan 22, 2024.
+  Last updated on Jan 30, 2024.
   <br/>
 </p>
   </div>
