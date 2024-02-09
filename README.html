@@ -30,13 +30,13 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -48,20 +48,17 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
     <link rel="canonical" href="https://worldbank.github.io/climateknowledgeportal/README.html" />
@@ -71,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="CMIP6" href="docs/collections/cmip6-x0.25.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 01, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 09, 2024"/>
   </head>
   
   
@@ -165,7 +162,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -417,9 +425,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-examples-at-various-sub-levels-and-facets-ins"><ins> Examples at various sub-levels and facets: </ins></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-priority-structure-for-search-ins"><ins> Priority structure for search: </ins></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-single-file-query-example-ins"><ins> Single file query example: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-at-various-sub-levels-and-facets"><ins> Examples at various sub-levels and facets: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priority-structure-for-search"><ins> Priority structure for search: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-file-query-example"><ins> Single file query example: </ins></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a></li>
@@ -488,8 +496,8 @@ document.write(`
 <p>       ../<font color='#FF0000'>cmip6-x0.25</font>/<font color='#ED7D31'>tas</font>/<font color='#FFD966'>access-cm2-r1i1p1f1-</font><font color='#C45911'>historical</font>/<br/>
          <font color='#A8D08D'>climatology</font>-<font color='#ED7D31'>tas</font>-<font color='#B4C6E7'>annual</font>-<font color='#4472C4'>mean</font>_<font color='#FF0000'>cmip6-x0.25</font>_<font color='#FFC000'>access-cm2-r1i1p1f1-historical</font>_<font color='#538135'>climatology</font>_<font color='#404040'>mean</font>_<font color='#AEAAAA'>1995-2014</font>.nc</p>
 </section>
-<section id="ins-examples-at-various-sub-levels-and-facets-ins">
-<h3><ins> Examples at various sub-levels and facets: </ins><a class="headerlink" href="#ins-examples-at-various-sub-levels-and-facets-ins" title="Permalink to this heading">#</a></h3>
+<section id="examples-at-various-sub-levels-and-facets">
+<h3><ins> Examples at various sub-levels and facets: </ins><a class="headerlink" href="#examples-at-various-sub-levels-and-facets" title="Permalink to this heading">#</a></h3>
 <p><font color='#FF0000'>Collection: {cmip6-x0.25,cru-x0.5,era5-x0.25,pop-x1,…}</font><br/>
    <font color='#ED7D31'>Variable: {tas,tasmax,tasmin,txx,tnn,…}</font><br/>
       <font color='#FFD966'>Datasetwithscenario: {ensemble-all-historical, access-cm2-r1i1p1f1-historical…}</font><br/>
@@ -501,8 +509,8 @@ document.write(`
                         <font color='#404040'>Percentile: {mean,median,p10,p90,…}</font><br/></p>
 <p>Note, the “scenario”, which is a sub-level of the Dataset, is also a separate facet that can be searched, so that a specific projection scenario can be selected (historical, ssp126, ssp245, …).</p>
 </section>
-<section id="ins-priority-structure-for-search-ins">
-<h3><ins> Priority structure for search: </ins><a class="headerlink" href="#ins-priority-structure-for-search-ins" title="Permalink to this heading">#</a></h3>
+<section id="priority-structure-for-search">
+<h3><ins> Priority structure for search: </ins><a class="headerlink" href="#priority-structure-for-search" title="Permalink to this heading">#</a></h3>
 <p><font color='#FF0000'>Collection: {cmip6-x0.25,cru-x0.5,era5-x0.25,pop-x1,…}</font><br/>
    <font color='#ED7D31'>Variable: {tas,tasmax,tasmin,txx,tnn,…}</font><br/>
       <font color='#A8D08D'>Product: {timeseries,climatology,anomaly,trend,…}</font><br/>
@@ -514,8 +522,8 @@ document.write(`
                         <font color='#538135'>ProductType: {timeseries,climatology,heatplot}</font><br/>
                            <font color='#4472C4'>Statistic: {mean,min,max}</font><br/></p>
 </section>
-<section id="ins-single-file-query-example-ins">
-<h3><ins> Single file query example: </ins><a class="headerlink" href="#ins-single-file-query-example-ins" title="Permalink to this heading">#</a></h3>
+<section id="single-file-query-example">
+<h3><ins> Single file query example: </ins><a class="headerlink" href="#single-file-query-example" title="Permalink to this heading">#</a></h3>
 <p>Collection: cmip6-x0.25<br/>
    Variable: tas<br/>
       Product: trend<br/>
@@ -625,9 +633,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-3-dataset">Sub-Level 3 – Dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-level-4-data">Sub-Level 4 – Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-naming-convention">File Naming Convention</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-examples-at-various-sub-levels-and-facets-ins"><ins> Examples at various sub-levels and facets: </ins></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-priority-structure-for-search-ins"><ins> Priority structure for search: </ins></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ins-single-file-query-example-ins"><ins> Single file query example: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-at-various-sub-levels-and-facets"><ins> Examples at various sub-levels and facets: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priority-structure-for-search"><ins> Priority structure for search: </ins></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-file-query-example"><ins> Single file query example: </ins></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-selections-per-each-collection">Available Selections Per Each Collection</a></li>
@@ -661,7 +669,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 01, 2024.
+  Last updated on Feb 09, 2024.
   <br/>
 </p>
   </div>
