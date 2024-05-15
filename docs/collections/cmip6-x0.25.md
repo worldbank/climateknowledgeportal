@@ -6,8 +6,7 @@ Model-based, climate projection data is derived from the Coupled Model Inter-com
 
 CMIP6 projections are shown through five Shared Socioeconomic Pathway (SSPs) Scenarios, designated by total radiative forcing (W/m2) reached by the end of the century. Scenarios are used to represent the climate response to different plausible future societal development storylines and associated contrasting emission pathways to outline how future emissions and land use changes translate into responses in the climate system. These represent possible future greenhouse gas concentration trajectories adopted by the Intergovernmental Panel on Climate Change (IPCC).
 
-CMIP6 products downscaled and bias corrected at 0.25-degree and represent an update from the recent downscaled NEX-GDDP-CMIP6
-See for raw data access: <https://www.nasa.gov/nasa-earth-exchange-nex/gddp/downscaled-climate-projections-nex-gddp-cmip6/>
+CMIP6 global products are downscaled and bias corrected at 0.25-degree, available for 1950-2100
 
 ## cmip6-x0.25 Structure
 
