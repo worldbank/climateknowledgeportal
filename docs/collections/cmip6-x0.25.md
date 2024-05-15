@@ -78,6 +78,7 @@ Collection:<br/>
 
 | **Scenario Code** | **Scenario Label** |
 | --- | --- |
+| ssp119 | SSP1-1.9 |
 | ssp126 | SSP1-2.6 |
 | ssp245 | SSP2-4.5 |
 | ssp370 | SSP3-7.0 |
