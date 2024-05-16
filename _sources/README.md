@@ -8,11 +8,11 @@ The World Bank’s Climate Change Knowledge Portal (CCKP) provides open access t
 Access the World Bank Climate Change Portal: https://climateknowledgeportal.worldbank.org
 ```
 
-This data archive consists of global gridded NetCDF files that represent ~35 models, 70+ variables, 5 SSPs, multiple climatology periods, 3 temporal aggregations (annual, seasonal, monthly), plus additional statistics for specific variable presentations.
+This data archive consists of global gridded NetCDF files that represent ~30 models, 70+ variables, 5 SSPs, multiple climatology periods, 3 temporal aggregations (annual, seasonal, monthly), plus additional statistics for specific variable presentations.
 
 Climate products are global and are available for the following **collections**:
 
-**cmip6-x0.25:** CMIP6 downscaled, bias corrected 0.25-degree – 1950-2100;<br/>
+**cmip6-x0.25:** CMIP6 global downscaled, bias corrected 0.25-degree – 1950-2100;<br/>
 **era5-x0.25:** EAR5 global 0.25-degree – 1950-2022;<br/>
 **cru-x0.5:** CRU global 0.50-degree – 1901-2022;<br/>
 **pop-x0.25:** Population global 0.25-degree – 1995-2100 (Gridded Population of the World Version 4).
