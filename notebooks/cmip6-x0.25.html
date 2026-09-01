@@ -69,7 +69,7 @@
     <link rel="prev" title="CMIP6" href="../docs/collections/cmip6-x0.25.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Aug 01, 2026"/>
+    <meta name="docbuild:last-update" content="Sep 01, 2026"/>
   </head>
   
   
@@ -465,7 +465,7 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;../climatology-tr-monthly-mean_cmip6-x0.25_hadgem3-gc31-mm-r1i1p1f3-ssp126_climatology_mean_2040-2059.nc&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">"../climatology-tr-monthly-mean_cmip6-x0.25_hadgem3-gc31-mm-r1i1p1f3-ssp126_climatology_mean_2040-2059.nc"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -934,7 +934,7 @@ wb_CMIP6_version = 3.0 (winter 2022/2023)</dd></dl></div></li></ul></div></div><
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">'time'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1335,7 +1335,7 @@ Attributes:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;lon_bnds&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">'lon_bnds'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1725,21 +1725,21 @@ Attributes:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;wb_truncation_label&#39;: 1,
- &#39;wb_grid_label&#39;: &#39;x0.25&#39;,
- &#39;wb_period_label&#39;: &#39;2040-2059&#39;,
- &#39;wb_percentile_label&#39;: &#39;mean&#39;,
- &#39;wb_type_label&#39;: &#39;climatology&#39;,
- &#39;wb_model_label&#39;: &#39;hadgem3-gc31-mm&#39;,
- &#39;wb_variant_label&#39;: &#39;r1i1p1f3&#39;,
- &#39;wb_scenario_label&#39;: &#39;ssp126&#39;,
- &#39;wb_statistic_label&#39;: &#39;mean&#39;,
- &#39;wb_aggregation_label&#39;: &#39;monthly&#39;,
- &#39;wb_variable_label&#39;: &#39;tr&#39;,
- &#39;wb_product_label&#39;: &#39;climatology&#39;,
- &#39;wb_collection_label&#39;: &#39;cmip6-x0.25&#39;,
- &#39;wb&#39;: &quot; \nwb_data_citation = Please acknowledge data source as :\n   World Bank Climate Change Knowledge Portal : https://climateknowledgeportal.worldbank.org \nwb_ensemble_citation = Please acknowledge CMIP6 multi-model ensemble data source as : \n   World Bank Climate Change Knowledge Portal : https://climateknowledgeportal.worldbank.org. \nwb_cmip6_acknowledgement = We acknowledge the World Climate Research Programme, which, through its Working Group \n   on Coupled Modeling, coordinated and promoted CMIP6. We thank the climate modeling groups \n   for producing and making available their model output, the Earth System Grid Federation (ESGF)\n   for archiving the data and providing access, and the multiple funding agencies who support CMIP6 and ESGF.\nwb_cmip6_terms_of_use = All CMIP6 GCM model inputs, as noted in Table 1, and any derivatives work, such as this dataset,\n   are governed by the original Terms of use (https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html)\n   and may have some restrictions on usage. See the individual netcdf files for the data licensing,\n   the global attribute cmip6_license notes the specific license the data may fall under.\nwb_general_warning = The CMIP6 archive contains the output of scientific simulations of the past and projected \n   futures that are subject to multiple sources of error, ranging from errors in the data handling, \n   to errors in the representation of the real world in either the model, or the experimental setup \n   for which the model was used. Different parts of the CMIP6 archive may be subject to differing \n   levels of such errors, and users should be alert to these issues, and their potential consequences \n   (and to the limitations of liability expressed in the data license). \nwb_grid = regridded to common resolution (x1: 180x360; x0.5: 360x720; x0.25 721x1440) \nwb_CMIP6_reference = Eyring, V., S. Bony, G.A. Meehl, C.A. Senior, B. Stevens, R.J. Stouffer, and K.E. Taylor, 2016: \n   Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization. \n   Geosci. Model Dev., 9, 1937-1958, 2016. https://doi.org/10.5194/gmd-9-1937-2016. \nwb_ScenarioMIP_reference = O&#39;Neill, B.C., Tebaldi, C., van Vuuren, D.P., Eyring, V., Friedlingstein, P., Hurtt, G., Knutti, R., \n   Kriegler, E., Lamarque, J.-F., Lowe, J., Meehl, G.A., Moss, R., Riahi, K., and Sanderson, B.M.: \n   The Scenario Model Intercomparison Project (ScenarioMIP) for CMIP6,  \n   Geosci. Model Dev., 9, 3461-3482, 1016. doi:10.5194/gmd-9-3461-2016. \nwb_author = Dr. Caspar M Ammann, Climate Strategies, ammann@climatestrategies.com\nwb_downscaling_source = NASA Earth Exchange (NEX) Global Daily Downscaled Projections (GDDP): \n   [https://doi.org/10.7917/OFSG3345; Described in : \n   Thrasher, B., Wang, W., Michaelis, A. et al. NASA Global Daily Downscaled Projections, CMIP6. \n      Sci Data 9, 262 (2022). https://doi.org/10.1038/s41597-022-01393-4\n   Thrasher, B., Wang, W., Michaelis, A. Nemani, R. (2021). NEX-GDDP-CMIP6.\n      NASA Center for Climate Simulation. https://doi.org/10.7917/OFSG3345\n   based on methods described in: \n   Thrasher, B., Maurer, E. P., McKellar, C., &amp; Duffy, P. B., 2012: Technical Note:\n      Bias correcting climate model simulated daily temperature extremes with quantile mapping.\n      Hydrology and Earth System Sciences, 16(9), 3309-3314, doi:10.5194/hess-16-3309-2012.\nwb_downscaling_author = Dr. Bridget Thrasher, bridget@climateanalyticsgroup.org\nwb_CMIP6_license = Creative Commons Zero license (CC0) license, \n   see https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html)\nwb_downscaling_acknowledgement = Climate scenarios used were from the NEX-GDDP-CMIP6 dataset, \n   prepared by the Climate Analytics Group and NASA Ames Research Center using\n   the NASA Earth Exchange and distributed by the NASA Center for Climate Simulation (NCCS).&quot;,
- &#39;wb_CMIP6&#39;: &#39; \nwb_creation_date = Fri Mar 17 13:41:19 PDT 2023\nwb_CMIP6_version = 3.0 (winter 2022/2023)&#39;}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{'wb_truncation_label': 1,
+ 'wb_grid_label': 'x0.25',
+ 'wb_period_label': '2040-2059',
+ 'wb_percentile_label': 'mean',
+ 'wb_type_label': 'climatology',
+ 'wb_model_label': 'hadgem3-gc31-mm',
+ 'wb_variant_label': 'r1i1p1f3',
+ 'wb_scenario_label': 'ssp126',
+ 'wb_statistic_label': 'mean',
+ 'wb_aggregation_label': 'monthly',
+ 'wb_variable_label': 'tr',
+ 'wb_product_label': 'climatology',
+ 'wb_collection_label': 'cmip6-x0.25',
+ 'wb': " \nwb_data_citation = Please acknowledge data source as :\n   World Bank Climate Change Knowledge Portal : https://climateknowledgeportal.worldbank.org \nwb_ensemble_citation = Please acknowledge CMIP6 multi-model ensemble data source as : \n   World Bank Climate Change Knowledge Portal : https://climateknowledgeportal.worldbank.org. \nwb_cmip6_acknowledgement = We acknowledge the World Climate Research Programme, which, through its Working Group \n   on Coupled Modeling, coordinated and promoted CMIP6. We thank the climate modeling groups \n   for producing and making available their model output, the Earth System Grid Federation (ESGF)\n   for archiving the data and providing access, and the multiple funding agencies who support CMIP6 and ESGF.\nwb_cmip6_terms_of_use = All CMIP6 GCM model inputs, as noted in Table 1, and any derivatives work, such as this dataset,\n   are governed by the original Terms of use (https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html)\n   and may have some restrictions on usage. See the individual netcdf files for the data licensing,\n   the global attribute cmip6_license notes the specific license the data may fall under.\nwb_general_warning = The CMIP6 archive contains the output of scientific simulations of the past and projected \n   futures that are subject to multiple sources of error, ranging from errors in the data handling, \n   to errors in the representation of the real world in either the model, or the experimental setup \n   for which the model was used. Different parts of the CMIP6 archive may be subject to differing \n   levels of such errors, and users should be alert to these issues, and their potential consequences \n   (and to the limitations of liability expressed in the data license). \nwb_grid = regridded to common resolution (x1: 180x360; x0.5: 360x720; x0.25 721x1440) \nwb_CMIP6_reference = Eyring, V., S. Bony, G.A. Meehl, C.A. Senior, B. Stevens, R.J. Stouffer, and K.E. Taylor, 2016: \n   Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization. \n   Geosci. Model Dev., 9, 1937-1958, 2016. https://doi.org/10.5194/gmd-9-1937-2016. \nwb_ScenarioMIP_reference = O'Neill, B.C., Tebaldi, C., van Vuuren, D.P., Eyring, V., Friedlingstein, P., Hurtt, G., Knutti, R., \n   Kriegler, E., Lamarque, J.-F., Lowe, J., Meehl, G.A., Moss, R., Riahi, K., and Sanderson, B.M.: \n   The Scenario Model Intercomparison Project (ScenarioMIP) for CMIP6,  \n   Geosci. Model Dev., 9, 3461-3482, 1016. doi:10.5194/gmd-9-3461-2016. \nwb_author = Dr. Caspar M Ammann, Climate Strategies, ammann@climatestrategies.com\nwb_downscaling_source = NASA Earth Exchange (NEX) Global Daily Downscaled Projections (GDDP): \n   [https://doi.org/10.7917/OFSG3345; Described in : \n   Thrasher, B., Wang, W., Michaelis, A. et al. NASA Global Daily Downscaled Projections, CMIP6. \n      Sci Data 9, 262 (2022). https://doi.org/10.1038/s41597-022-01393-4\n   Thrasher, B., Wang, W., Michaelis, A. Nemani, R. (2021). NEX-GDDP-CMIP6.\n      NASA Center for Climate Simulation. https://doi.org/10.7917/OFSG3345\n   based on methods described in: \n   Thrasher, B., Maurer, E. P., McKellar, C., &amp; Duffy, P. B., 2012: Technical Note:\n      Bias correcting climate model simulated daily temperature extremes with quantile mapping.\n      Hydrology and Earth System Sciences, 16(9), 3309-3314, doi:10.5194/hess-16-3309-2012.\nwb_downscaling_author = Dr. Bridget Thrasher, bridget@climateanalyticsgroup.org\nwb_CMIP6_license = Creative Commons Zero license (CC0) license, \n   see https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html)\nwb_downscaling_acknowledgement = Climate scenarios used were from the NEX-GDDP-CMIP6 dataset, \n   prepared by the Climate Analytics Group and NASA Ames Research Center using\n   the NASA Earth Exchange and distributed by the NASA Center for Climate Simulation (NCCS).",
+ 'wb_CMIP6': ' \nwb_creation_date = Fri Mar 17 13:41:19 PDT 2023\nwb_CMIP6_version = 3.0 (winter 2022/2023)'}
 </pre></div>
 </div>
 </div>
@@ -1752,7 +1752,7 @@ Attributes:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># visualize the data</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;climatology-tr-monthly-mean&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">'climatology-tr-monthly-mean'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1773,7 +1773,7 @@ Because we are working with a <code class="docutils literal notranslate"><span c
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># surface plot of the data</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">&#39;climatology-tr-monthly-mean&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s1">&#39;2040-06-16&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">'climatology-tr-monthly-mean'</span><span class="p">]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="s1">'2040-06-16'</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1885,7 +1885,7 @@ By Climate Change Knowledge Portal Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Aug 01, 2026.
+  Last updated on Sep 01, 2026.
   <br/>
 </p>
   </div>
